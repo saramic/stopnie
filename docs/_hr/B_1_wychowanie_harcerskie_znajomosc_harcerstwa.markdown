@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Wychowanie harcerskie. Znajomość Harcerstwa."
+title:  "1. Wychowanie harcerskie. Znajomość Harcerstwa."
 categories: HR 
 ---
 

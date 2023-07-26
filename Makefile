@@ -18,11 +18,19 @@ install:
 slides:
 	slides -v
 
+.PHONY: site
+site:
+	pushd docs && \
+	bundle && \
+	bundle exec jekyll serve --livereload && \
+	popd 
+
 .PHONY: usage
 usage:
 	@echo
 	@echo "Hi ${GREEN}${USER}!${NC} Welcome to ${RED}${CURRENT_DIR}${NC}"
 	@echo
+	@echo "${YELLOW}make site${NC}     "
 	@echo "${YELLOW}make install${NC}  "
 	@echo "${YELLOW}make slides${NC}   "
 	@echo
